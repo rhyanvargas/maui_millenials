@@ -1,0 +1,23 @@
+{
+  "name": "maui_millenials_starter",
+  "version": "1.0.0",
+  "description": "Tourism site for Maui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhyanvargas/maui_millenials.git"
+  },
+  "author": "Rhyan Vargas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rhyanvargas/maui_millenials/issues"
+  },
+  "homepage": "https://github.com/rhyanvargas/maui_millenials#readme",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "sass": "^1.17.0"
+  }
+}

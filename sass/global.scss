@@ -1,0 +1,100 @@
+// HTML ELEMENTS
+html,
+body {
+    height: 100%;
+}
+body {
+    background-color: $color-light;
+    margin: 0;
+    padding: 0;
+}
+// IMAGES
+img {
+    height: 100%;
+    width: 100%;
+    &-full {
+        position: absolute;
+        content: '';
+        background-size: cover;
+    }
+}
+.icon {
+    
+    &--social {
+        width: 3.2rem;
+        height: 3.2rem;
+        transition: all 0.4s;
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+// BACKGROUNDS
+.bg {
+    &-dark {
+        background-color: theme-color("primary") !important;
+    }
+    &-light {
+        background-color: $white !important;
+    }
+    &-overlay {
+        &:after {
+            background-color: $dark;
+            position: absolute;
+            content: '';
+            top: 100%;
+            right: 100%;
+            z-index: 1;
+        }
+    }
+}
+// VIDEO
+.vimeo-wrapper {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+.vimeo-wrapper iframe {
+    width: 100vw;
+    height: 56.25vw;
+    /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    min-height: 100vh;
+    min-width: 177.77vh;
+    /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// CUSTOM ELEMENTS
+.global__hero {
+    height: 100vh;
+    .left__content {
+        padding: 0 
+    }
+}
+button {
+    &.btn {
+        height: 100%;
+        padding: 0 1rem;
+        @extend .transition-time;
+        &:hover {
+            transform: translateX(10px);
+        }
+        @include media-breakpoint-up(md) {
+            padding: 0 3rem;
+        }
+    }
+    i {
+        color: $color-light;
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,48 @@
+.container {
+    &-fluid {
+        height: 100%;
+    }
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    >.col,
+    >[class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+.section {
+    &__container {
+        display: flex;
+        padding: 1.5rem;
+        @include media-breakpoint-up(lg) {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    }
+}
+.col {
+    &__container{
+        @include media-breakpoint-up(md) {
+            display: flex;
+            padding: 6.4rem 0 8rem 0;
+        }
+        &--nopad {
+            @include media-breakpoint-up(md) {
+                padding: 0;
+            }
+        }
+
+    }
+    &-right {
+        @include media-breakpoint-down(md) {
+            height: 100%;
+        }
+
+    }
+}
+.d-flex {
+    height: 100%;
+}

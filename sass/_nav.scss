@@ -1,0 +1,42 @@
+.navbar {
+    &-brand {
+        font-family: $font-secondary;
+        margin-bottom: 0;
+        img {
+            width: 115px;
+        }
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+        &-middle {
+            display: none;
+            display: block;
+            // @include media-breakpoint-up(md) {
+            // }
+        }
+    }
+    &-dark {
+        color: $white;
+    }
+    [class*="navbar-expand-"] &-nav a.nav-link {
+        color: color("gray-dark");
+        vertical-align: middle;
+        font-weight: bold;
+        letter-spacing: 3px;
+        padding-right: 0.4rem;
+        padding-left: 0.4rem;
+        text-transform: uppercase;
+        @include media-breakpoint-up(lg) {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+        &:hover {
+            background-image: url('../img/splash_03.png');
+            background-size: 75% 10px;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            color: theme-color("primary");
+            padding-bottom: 10px;
+        }
+    }
+}    

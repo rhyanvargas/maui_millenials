@@ -1,0 +1,31 @@
+.transition-time {
+    transition: all 0.3s ease-in-out 0s;
+}
+.animation-line {
+    position: relative;
+    &:hover {
+        color: #000;
+    }
+    &:before {
+        //  Add the border, and hide it through a transformation.
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        bottom: 1px;
+        z-index: -1;
+        left: 0;
+        background-color: theme-color(tertiary);
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        @extend .transition-time;
+    }
+    &:hover:before {
+        // Activate the animation
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
