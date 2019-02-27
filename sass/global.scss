@@ -50,7 +50,7 @@ img {
     }
 }
 // VIDEO
-.vimeo-wrapper {
+.bg-video-wrapper {
     position: absolute;
     bottom: 0;
     top: 0;
@@ -60,8 +60,18 @@ img {
     z-index: -1;
     pointer-events: none;
     overflow: hidden;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #15466B;
+        opacity: 0.5;
+    }
 }
-.vimeo-wrapper iframe {
+.bg-video-wrapper iframe {
     width: 100vw;
     height: 56.25vw;
     /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */

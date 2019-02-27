@@ -6,6 +6,9 @@
             padding: 0 6.4rem;
         }
     }
+    &--light {
+        color: theme-color(light);
+    }
 }
 .social {
     display: flex;

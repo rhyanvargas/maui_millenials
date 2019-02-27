@@ -26,17 +26,22 @@ h2 {
 }
 span {
     color: $color-grey;
-    color: #999;
     line-height: 1.2;
     text-transform: uppercase;
     margin-right: 2rem;
+    &.light {
+        color: theme-color(light);
+    }
 }
 label {
+    font-family: $font-secondary;
     @include font-size(1.6);
     font-weight: 800;
 }
 p {
+    font-family: $font-secondary;
     @include font-size(1.8);
+    letter-spacing: 0.106rem;
 }
 a {
     color: theme-color(tertiary);
@@ -46,6 +51,13 @@ a {
         letter-spacing: 0;
         font-weight: 800;
     }
+}
+
+// UTILITIES
+.cursive {
+    font-family: $font-cursive;
+    font-size: 4.9rem;
+    letter-spacing: 0.23rem;
 }
 
 
