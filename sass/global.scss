@@ -78,7 +78,8 @@ img {
             left: 0;
             bottom: 0;
             background-color: theme-color(primary);
-            opacity: 0.5;
+            mix-blend-mode: multiply;
+            opacity: 0.8;
         }
     }
 }

@@ -4819,7 +4819,8 @@ img {
       left: 0;
       bottom: 0;
       background-color: #15466B;
-      opacity: 0.5; } }
+      mix-blend-mode: multiply;
+      opacity: 0.8; } }
 
 .bg-video-wrapper iframe {
   display: none;
