@@ -53,6 +53,11 @@ a {
         letter-spacing: 0;
         font-weight: 800;
     }
+    &.social-icon {
+        &:before {
+            display: none;
+        }
+    }
 }
 
 // UTILITIES

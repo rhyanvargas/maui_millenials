@@ -4913,6 +4913,8 @@ a {
     text-transform: capitalize;
     letter-spacing: 0;
     font-weight: 800; }
+  a.social-icon:before {
+    display: none; }
 
 .cursive {
   font-family: "Cursive", serif;
