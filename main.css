@@ -4907,6 +4907,7 @@ p {
 
 a {
   color: #007bff;
+  font-weight: bold;
   text-decoration: none; }
   a.nav-link {
     text-transform: capitalize;
@@ -4952,18 +4953,18 @@ a {
 .d-flex {
   height: 100%; }
 
-.transition-time, button.btn, .animation-line:before, input {
+.transition-time, button.btn, .animation-line:before, a:before, input {
   transition: all 0.3s ease-in-out 0s; }
 
-.animation-line {
+.animation-line, a {
   position: relative; }
-  .animation-line:hover {
+  .animation-line:hover, a:hover {
     color: #000; }
-  .animation-line:before {
+  .animation-line:before, a:before {
     content: "";
     position: absolute;
     width: 100%;
-    height: 10px;
+    height: 100%;
     bottom: 1px;
     z-index: -1;
     left: 0;
@@ -4972,7 +4973,7 @@ a {
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transition: all 0.3s ease-in-out 0s; }
-  .animation-line:hover:before {
+  .animation-line:hover:before, a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1); }
