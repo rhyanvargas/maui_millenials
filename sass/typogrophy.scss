@@ -3,13 +3,19 @@ html {
 }
 body {
     font-family: $font-primary;
-    @include font-size(1.6);
+    @include font-size(1.5);
+    @include media-breakpoint-up(sm) {
+        @include font-size(1.8);
+    }
     color: $color-dark;
 }
 h1 {
     font-family: $font-secondary;
-    margin: 2.4rem 0;
+    margin: 1rem 0;
     @include font-size(6);
+    @include media-breakpoint-up(md) {
+        margin: 2.4rem 0;
+    }
     @include media-breakpoint-up(lg) {
         @include font-size(10.5);
     }
@@ -40,8 +46,8 @@ label {
 }
 p {
     font-family: $font-secondary;
-    @include font-size(1.8);
     letter-spacing: 0.106rem;
+    margin: 1rem 0;
 }
 a {
     @extend .animation-line;

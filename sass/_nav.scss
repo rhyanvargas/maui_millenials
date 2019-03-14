@@ -3,7 +3,10 @@
         font-family: $font-secondary;
         margin-bottom: 0;
         img {
-            width: 115px;
+            width: 65px;
+            @include media-breakpoint-up(sm) {
+                width: 115px;
+            }
         }
         @include media-breakpoint-up(md) {
             display: none;
