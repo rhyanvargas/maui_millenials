@@ -4763,15 +4763,6 @@ body {
   background-color: #F4EFEA;
   margin: 0;
   padding: 0; }
-  @media (max-width: 767.98px) {
-    body {
-      background: url("https://scontent-iad3-1.cdninstagram.com/vp/215bcbcb4b2b3935ac4c4c6acf490060/5D0DC46A/t51.2885-15/e35/51251789_248659329421971_4639326272432297006_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com") no-repeat center center fixed;
-      -webkit-background-size: 100%;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      background-color: #175579;
-      background-blend-mode: overlay; } }
 
 img {
   height: 100%;
@@ -4823,7 +4814,6 @@ img {
       opacity: 0.8; } }
 
 .bg-video-wrapper iframe {
-  display: none;
   min-height: 150vh;
   width: 100vw;
   height: 56.25vw;
